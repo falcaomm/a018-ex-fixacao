@@ -9,5 +9,13 @@ const produtos = [
     { nome: "Vinho Tinto", categoria: "Bebidas", preco: 55 },
     { nome: "Berinjela kg", categoria: "Hortifruti", preco: 8.99 },
     { nome: "Sabão em Pó", categoria: "Limpeza", preco: 10.80 }
- ]
- 
+]
+
+console.log(produtos[0].categoria);
+
+const produtosLimpeza = produtos.filter((item, indice, array) => {
+    // return array[indice].categoria === "Limpeza"
+    return item.categoria === "Limpeza"
+})
+
+console.log(produtosLimpeza);
