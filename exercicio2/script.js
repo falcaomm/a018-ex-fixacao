@@ -1,15 +1,13 @@
 const arrayNumeros = [0, 1, 2, 3, 4, 5, 6, 7]
 
-const multiplica3 = arrayNumeros.map((item, indice, array) => {
-    arrayTriplos = item * 3
-    return arrayTriplos
+const triplos = arrayNumeros.map((item, indice, array) => {
+    return item * 3
 })
 
-console.log(multiplica3);
+console.log(triplos);
 
-const divide2 = arrayNumeros.map((item, indice, array) => {
-    arrayMetades = item / 2
-    return arrayMetades
+const metade = arrayNumeros.map((item, indice, array) => {
+    return item / 2   
 })
 
-console.log(divide2);
+console.log(metade);
